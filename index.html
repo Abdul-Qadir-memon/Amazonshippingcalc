@@ -32,25 +32,7 @@
         color: black;
         background-color: white;
     }
-
-    .sub-button{
-        border: none;
-        cursor: pointer;
-        padding: 10px 20px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-        border-radius: 20px;
-        color: white;
-        background-color: black;
-    }
-
-    .sub-button:hover{
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
-    }
-
-    .subscribed{
-        background-color: white;
-        color: black;
-    }
+   
 </style>
 
 <body>
@@ -68,10 +50,6 @@
     </button>
 
     <p class="js-show-Totall"></p>
-
-    <button onclick="fun()" class="sub-button">
-        Subscribe
-    </button>
     
 </body>
 <script>
@@ -90,18 +68,6 @@
         }
     }
 
-     
-    function fun(){
-    const buttonElem = document.querySelector('.sub-button');
-    if(buttonElem.innerText === 'Subscribe'){
-        buttonElem.innerHTML = 'Subscribed';
-        buttonElem.classList.add('subscribed')
-    } else{
-        buttonElem.innerHTML = 'Subscribe';
-        buttonElem.classList.remove('subscribed')
-    }
-
-    }
 </script>
 
 </html>
