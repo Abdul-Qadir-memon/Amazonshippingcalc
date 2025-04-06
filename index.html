@@ -55,7 +55,7 @@
 <script>
     function calculateShipping() {
         let cost = parseInt(document.querySelector('.js-input').value);
-        if (cost < 100) {
+        if (cost <= 100) {
             cost += 10;
         }
         document.querySelector('.js-show-Totall')
